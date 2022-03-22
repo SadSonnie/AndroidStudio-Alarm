@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_iphone_x_xs_11_pro___1"
+    tools:context=".MainActivity">
+
+ <Button
+     android:id="@+id/exit"
+     android:layout_width="50dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="2dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginBottom="653dp"
+     android:background="@drawable/ic_baseline_exit_to_app_24"
+     android:backgroundTint="#F10021"
+     android:text=""
+     android:textAllCaps="false"
+     android:textStyle="bold" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="32dp"
+     android:layout_centerHorizontal="true"
+     android:text="My Clock"
+     android:textStyle="bold"
+     android:textColor="@color/white"
+     android:layout_marginTop="60dp"
+     android:id="@+id/myclock">
+
+ </TextView>
+
+ <AnalogClock
+     android:id="@+id/jam"
+     android:layout_width="289dp"
+     android:layout_height="250dp"
+     android:layout_below="@+id/myclock"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="100dp">
+
+ </AnalogClock>
+
+ <DigitalClock
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="32dp"
+     android:textStyle="bold"
+     android:layout_marginTop="22dp"
+     android:layout_below="@id/jam"
+     android:layout_centerHorizontal="true"
+     android:id="@+id/digitaljam"
+     android:textColor="@color/white">
+
+ </DigitalClock>
+ <Button
+     android:id="@+id/setwaktu"
+     android:textStyle="bold"
+     android:backgroundTint="#F10021"
+     android:layout_centerHorizontal="true"
+     android:layout_below="@id/digitaljam"
+     android:textAllCaps="false"
+     android:layout_marginTop="22dp"
+     android:text="Setel Waktu Alarm"
+     android:layout_width="185dp"
+     android:layout_height="wrap_content"/>
+
+ <Button
+     android:id="@+id/setalarm"
+     android:layout_width="185dp"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/setwaktu"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="22dp"
+     android:backgroundTint="#001A71"
+     android:text="Jalankan Alarm"
+     android:textAllCaps="false"
+     android:textStyle="bold" />
+
+
+</RelativeLayout>
+
